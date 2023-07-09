@@ -1,0 +1,39 @@
+{
+  "name": "webcam-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "vue-cli-service electron:build --win dir --linux dir",
+    "dev": "vue-cli-service electron:serve",
+    "lint": "vue-cli-service lint",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "vue": "^3.2.13",
+    "vue-router": "^4.1.6",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/electron-devtools-installer": "^2.2.0",
+    "@types/offscreencanvas": "^2019.7.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-standard": "^8.0.1",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "cross-env": "^7.0.3",
+    "electron": "^23.0.0",
+    "electron-devtools-installer": "^3.1.0",
+    "eslint": "^8.44.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0",
+    "ts-loader": "^8.4.0",
+    "typescript": "~4.5.5",
+    "vue-cli-plugin-electron-builder": "^3.0.0-0"
+  }
+}
